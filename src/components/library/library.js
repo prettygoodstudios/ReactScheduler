@@ -8,7 +8,7 @@ class Library extends Component {
   }
   renderCourses = () => {
     const data = this.props.courses;
-    return data.map((c,i) => <LibraryCourse title={c.title} description={c.description} key={i}/>);
+    return data.map((c,i) => <LibraryCourse {...c} key={i}/>);
   }
   render(){
     return(
