@@ -4,7 +4,15 @@ export default function(state = [], action){
     case FETCH_COURSES:
       return [...state, ...action.payload];
     case TOGGLE_ENROLLED:
-      console.log(action.payload);
+      const newCourses = state.map((c) => {
+        if (c.id == action.payload){
+          c.enrolled = !c.enrolled;
+        }
+        return c;
+      });
+      return [
+        ...newCourses
+      ];
       return state;
     default:
       return state;
