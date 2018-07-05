@@ -1,0 +1,7 @@
+.home{
+  display: grid;
+  grid-template-columns: [library-s] 1fr 1fr [library-e schedule-s] 1fr [schedule-e];
+  grid-auto-rows: 1fr;
+  height: 100vh;
+  width: 100vw;
+}
