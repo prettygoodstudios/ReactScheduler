@@ -1,5 +1,7 @@
 @import "variables";
+@import "libraryCourse";
 @import "library";
+@import 'arrow';
 .home{
   display: grid;
   grid-template-columns: [library-s] 1fr 1fr [library-e schedule-s] 1fr [schedule-e];
