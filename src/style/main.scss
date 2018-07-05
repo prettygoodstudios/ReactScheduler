@@ -2,6 +2,9 @@
 @import "libraryCourse";
 @import "library";
 @import 'arrow';
+@import 'schedule';
+@import 'scheduleCourse';
+@import 'progressTracker';
 .home{
   display: grid;
   grid-template-columns: [library-s] 1fr 1fr [library-e schedule-s] 1fr [schedule-e];
@@ -9,11 +12,8 @@
   height: 100vh;
   width: 100vw;
 }
-.schedule{
-  position: relative;
-  grid-column: schedule-s/schedule-e;
-}
 .gradient{
+  z-index: -1;
   position: absolute;
   width: 100%;
   height: 100%;

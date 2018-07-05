@@ -1,0 +1,8 @@
+.schedule{
+  position: relative;
+  display: grid;
+  grid-row-gap: 22px;
+  grid-template-rows: 100px repeat(auto-fit, 1fr) [progress-s] 76px [progress-e];
+  z-index: 100;
+  grid-column: schedule-s/schedule-e;
+}
