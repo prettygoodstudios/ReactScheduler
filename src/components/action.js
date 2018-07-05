@@ -1,10 +1,11 @@
 import React, {Component} from "react";
-import Icon from "../icon";
+import Icon from "./icon";
 class Action extends Component{
   render(){
       return(
-        {Icon("fas fa-plus-circle","library-course__action")}
-        {Icon("fas fa-times-circle","library-course_action")}
+        <button onClick={() => this.props.onClick() } >
+          {Icon("fas fa-plus-circle","library-course__action")}
+        </button>
       );
   }
 }
