@@ -2,14 +2,15 @@
   position: relative;
   display: grid;
   grid-row-gap: 22px;
-  grid-template-rows: 100px repeat(auto-fill, 75px) [progress-s] 76px [progress-e];
+  grid-template-rows: 80px repeat(auto-fill, 75px) [progress-s] 76px [progress-e];
   z-index: 100;
-  align-items: center;
-  align-content: center;
+  justify-items: center;
   &__title{
     border-left: 1px solid white;
     padding-left: 30px;
     margin-left: 10px;
+    padding-top: 20px;
+    margin-top: 10px;
     font-family: $font-alegreya;
     font-size: 20px;
     color: white;

@@ -1,3 +1,20 @@
 .schedule-course{
-  margin-left: 70px;
+  height: 55px;
+  width: 280px;
+  background-color: white;
+  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.5);
+  font-size: 16px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: [title-s] 1fr 32px [title-e];
+  padding: 10px;
+  align-items: center;
+  &__label{
+    grid-column: 1/4;
+    text-align: center;
+    grid-row: 1/2;
+  }
+  &__action{
+    grid-row: 1/2;
+  }
 }
