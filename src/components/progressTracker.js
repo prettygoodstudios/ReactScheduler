@@ -10,6 +10,9 @@ class ProgressTracker extends Component{
         <div className="progess-tracker__percentage">
           {this.calculatePercent()}%
         </div>
+        <div className="progess-tracker__courses-left">
+          {(this.props.amountPossible - this.props.amountEnrolled != 0) ? `${this.props.amountPossible - this.props.amountEnrolled} courses left to schedule.` : "No more courses left to schedule."}
+        </div>
       </div>
     );
   }
