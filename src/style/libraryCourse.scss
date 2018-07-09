@@ -1,3 +1,7 @@
+@mixin solidCourse(){
+  background: white;
+  box-shadow: 0 2px 0px 0 rgba(0,0,0,0.3);
+}
 .library-course{
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
@@ -9,6 +13,7 @@
     flex-direction: row;
   }
   &__line{
+    margin-top: 20px;
     grid-column: 1/-1;
     grid-row: 1/2;
   }
@@ -23,13 +28,12 @@
 }
 .library-course{
     &:hover{
-          background: white;
-          box-shadow: 0 2px 0px 0 rgba(0,0,0,0.3);
+          @include solidCourse;
     }
     &__line{
         border-bottom: 1px solid $color-gray;
     }
-    &__title{
+    &__title-check{
       color: $color-gray;
       font-family: $font-lato;
       font-size: 18px;
@@ -55,4 +59,7 @@
 
       }
     }
+}
+.library-course-selected{
+  @include solidCourse();
 }
