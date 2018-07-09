@@ -1,5 +1,5 @@
 .progress-tracker{
-  grid-row: [progress-s] [progress-e];
+  align-self: flex-end;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 75px;

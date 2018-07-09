@@ -3,7 +3,7 @@
   display: grid;
   grid-row-gap: 22px;
   grid-template-rows: 80px repeat(auto-fill, 75px) [progress-s] 76px [progress-e];
-  z-index: 100;
+  z-index: 999;
   justify-items: center;
   &__title{
     border-left: 1px solid white;
