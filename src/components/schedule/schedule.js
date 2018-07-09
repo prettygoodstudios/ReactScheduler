@@ -8,7 +8,9 @@ import ProgressTracker from "../progressTracker";
 class Schedule extends Component {
   renderItems = () => {
     const data = this.props.courses;
-    return data.map( (c, i) => <ScheduleCourse {...c} key={i}/>).filter((c) => c.enrolled);
+    console.log(data);
+    const filt = data.filter((c) => c.enrolled);
+    return filt.map( (c, i) => <ScheduleCourse {...c} key={i}/>);
   }
   render(){
     return(

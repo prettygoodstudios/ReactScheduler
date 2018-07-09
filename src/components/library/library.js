@@ -8,7 +8,8 @@ class Library extends Component {
   }
   renderCourses = () => {
     const data = this.props.courses;
-    return data.map((c,i) => <LibraryCourse {...c} key={i}/>);
+    const filt = data.filter((c) => !c.enrolled );
+    return filt.map((c,i) => <LibraryCourse {...c} key={i}/>).filter((c) => !c.enrolled);
   }
   render(){
     return(

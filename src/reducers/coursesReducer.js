@@ -7,6 +7,7 @@ export default function(state = [], action){
       const newCourses = state.map((c) => {
         if (c.id == action.payload){
           c.enrolled = !c.enrolled;
+          //console.log(`ID:${c.id}, ENROLLED: ${c.enrolled}`);
         }
         return c;
       });
