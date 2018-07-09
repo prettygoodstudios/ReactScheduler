@@ -31,11 +31,11 @@ class LibraryCourse extends Component{
           <label className="library-course__title">{this.props.title}</label>
           { Icon("fas fa-check", "library-course__icon") }
         </div>
-        <div className="library-course__line"></div>
         <Arrow className="library-course__arrow" onClick={this.toggle} open={this.state.open}/>
         <Action onClick={() => {this.props.toggleEnrolled(this.props.id); this.setState({open: false});}} open={this.props.enrolled}/>
         <AnimateHeight duration="300" height={(this.state.open) ? "auto" : 0}>
-          <div className="libary-course__description">
+          <div className="library-course__description">
+            <hr />
             <label>Course Description</label>
             <p>{this.props.description}</p>
           </div>
