@@ -31,7 +31,7 @@ class LibraryCourse extends Component{
         </div>
         <div className="library-course__line"></div>
         <Arrow className="library-course__arrow" onClick={this.toggle} open={this.state.open}/>
-        <Action onClick={() => {this.props.toggleEnrolled(this.props.id); this.setState({open: false});}}/>
+        <Action onClick={() => {this.props.toggleEnrolled(this.props.id); this.setState({open: false});}} open={this.props.enrolled}/>
         { this.state.open &&
         <div className="libary-course__description">
           <label>Course Description</label>
