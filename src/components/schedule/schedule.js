@@ -10,6 +10,7 @@ class Schedule extends Component {
     const data = this.props.courses;
     console.log(data);
     const filt = data.filter((c) => c.enrolled);
+    this.amountEnrolled = filt.length;
     return filt.map( (c, i) => <ScheduleCourse {...c} key={i}/>);
   }
   render(){
@@ -17,7 +18,7 @@ class Schedule extends Component {
       <div className="schedule">
         <h1 className="schedule__title">My Schedule</h1>
         { this.renderItems() }
-        <ProgressTracker />
+        <ProgressTracker amountPossible={5} amountEnrolled={this.amountEnrolled}/>
         <Gradient />
       </div>
     );

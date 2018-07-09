@@ -29,6 +29,19 @@ export function fetchCourses(){
         title: "Bootstrap",
         description: "How to format and build web apps.",
         enrolled: false
+      },
+      {
+        id: 3,
+        title: "Skeleton",
+        description: "How to format and build web apps.",
+        enrolled: false
+      }
+      ,
+      {
+        id: 4,
+        title: "Media Queries",
+        description: "How to format and build web apps.",
+        enrolled: false
       }
     ]
   }
